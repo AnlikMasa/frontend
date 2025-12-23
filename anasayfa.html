@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="stil.css" />
+</head>
+<body>
+    <style>
+@keyframes scroll-left { /* kaydırma hareketi */
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Sonsuz döngü için */
+        transform: translateX(-50%);
+    }
+}
+
+.kafemenüseçim{
+    padding: 300px ; 
+}
+
+/* kaydırma hareketi*/
+.menükaydırma {
+    display: flex; 
+    width: fit-content; 
+    animation: scroll-left 25s linear infinite; 
+}
+
+.menüliste{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    white-space: nowrap; /* Metinlerin alt satıra geçmesini engeller */
+}
+
+.menüliste li {
+    font-family: 'Playfair Display', serif; 
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #fff; 
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+    letter-spacing: 2px;
+    padding: 0 45px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menüliste li:not(:last-child)::after {
+    content: '-';
+    position: absolute;
+    right: 15px; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: #d1d1d1;
+    font-weight: 300;
+}
+    </style>
+    <nav class="gecisler">
+        <nav class="logo">
+    <a href="anasayfa.html"> <img src="logo3.6.png"></a>
+        </nav>
+    <a href="anasayfa.html">Anasayfa</a>
+    <a href="menuler.html">Menü</a>
+    <a href="rezervasyon.HTML">Rezervasyon</a>
+    <a href="main.html">İletişim</a>
+    <a href="hakkimizda.html">Hakkımızda</a>
+    </nav>
+
+    <nav class="ikonlar">
+    <img src="instagram.png">
+    <img src="x.png">
+    <img src="facebook.png">
+    </nav>
+
+    <div class="kafeadi">
+        <h1>CARPE DİEM</h1>
+    </div>
+
+    <section class="kafemenüseçim">
+        <div class="menükaydırma">
+            <ul class="menüliste">
+                <li>MOCHA</li>
+                <li>AMERICANO</li>
+                <li>LATTE</li>
+                <li>FİLTRE KAHVE</li>
+                <li>CAPPUCINO</li>
+                <li>ESPRESSO</li>
+            </ul>
+            
+            <ul class="menüliste">
+                <li>MOCHA</li>
+                <li>AMERICANO</li>
+                <li>LATTE</li>
+                <li>FİLTRE KAHVE</li>
+                <li>CAPPUCINO</li>
+                <li>ESPRESSO</li>
+            </ul>
+        </div>
+    </section>
+</section>
+ <footer class="site-altbilgi">
+    <p>© 2025 Carpe Diem| Tum haklari saklidir.</p>
+  </footer>
+</body>
+</html>
