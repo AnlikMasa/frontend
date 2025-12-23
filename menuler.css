@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("../foto/arkaplan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding-top: 80px;
+}
+
+
+.gecisler {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 25px;
+    padding: 20px 25px;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+
+    font-family: "Times New Roman", serif;
+    z-index: 999;
+}
+
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logo img {
+    display: block;
+    width: 120px;
+    height: auto;
+}
+
+
+.nav-links a {
+    margin-left: 30px;
+    color: #D7CCC8;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd08a;
+}
+
+
+.baslik {
+    text-align: center;
+    color: white;
+    margin: 35px 0;
+    letter-spacing: 4px;
+    font-size: 42px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+
+.menu-container {
+    min-height: calc(100vh - 220px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+
+.menu-container a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.menu-foto {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+
+    border-radius: 16px;
+    background: transparent;
+
+    box-shadow: 0 10px 22px rgba(0,0,0,0.35);
+    transition: transform 0.3s ease;
+}
+
+.menu-foto:hover {
+    transform: scale(1.05);
+}
+
+
+.menu-isim {
+    margin-top: 16px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.7);
+}
