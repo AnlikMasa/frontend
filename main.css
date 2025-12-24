@@ -1,0 +1,157 @@
+html {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("anasayfa.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+  
+}
+
+body {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.gecisler {
+    font-family: 'Times New Roman';
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: noneblur(5px);
+    position:relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    padding: 0;
+    gap: 25px;
+   align-items: center;
+   justify-content: flex-end;
+   padding-right: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+  .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    pointer-events: auto;
+    img{
+    display: block;
+    width: 120px;
+    max-width: 12vw;
+    height: auto;
+       }
+    }
+}
+.gecisler a {
+  color: 	#D7CCC8;
+  font-weight: 500;
+  font-size: 120%;
+  padding: 5px 0;
+  border-bottom: none;
+  transition: color 0.3s, border-color 0.3s;
+  text-decoration: none;
+}
+.gecisler a:hover {
+  color: #ffd08a;
+  border-bottom: none;
+}
+
+.container {
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 40px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    
+}
+
+.main-div {
+    text-align: center;
+}
+
+
+.title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #3d684b; 
+    font-weight: bold;
+}
+
+
+.box {
+    background: #ffffff;
+    padding: 15px 25px;
+    margin: 12px 0;
+    font-size: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 280px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid #d6eadf; 
+}
+
+
+.box:hover {
+    transform: scale(1.05);
+    background: #f4fbf7; 
+}
+
+
+.box i {
+    margin-right: 10px;
+    color: #6aa989; 
+}
+
+
+.hours {
+    margin-top: 25px;
+    background: #ffffff;
+    padding: 18px;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d6eadf;
+}
+
+.hours h3 {
+    margin: 0 0 10px 0;
+    color: #3d684b;
+}
+
+.site-altbilgi {
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); 
+  color: white;
+  padding: 15px 0; 
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px); 
+}
